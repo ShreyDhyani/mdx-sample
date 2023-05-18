@@ -16,8 +16,16 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": ["node"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "env":[
+    "browser",
+    "node"
+  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/mdxUtils.ts", "pages/index.tsx"],
   "exclude": ["node_modules"]
 }
